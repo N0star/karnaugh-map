@@ -24,3 +24,14 @@ The program asks user for data and based on it it returns the results.
  - all minterms not mentioned in this or previous step will be assumed to equal 0
 4. **Now program will internally create proper Karnough map and use it to grant the results**
 5. **And finally the program will return 2D view of Karnaugh map and simplified function formula.**
+
+### An example: 
+ The minimisation of **f(A,B,C,D)**=Σ(0,1,2,4,5)+uΣ(3,6,7)
+1. Variable for the step one will be **4** since there's four variables (A,B,C,D)
+2. Variables for the step two will be: 0,1,2,4,5 and q (to go to the next step)
+3. Variables for the step three will be: 3,6,7 and q (to go to the next step)
+4. After all varibles are given, the program will return minimized function.
+
+![It should look somewhat like this](./screenshot.png)
+
+So **f(A,B,C,D) = D'** after being minimized.
